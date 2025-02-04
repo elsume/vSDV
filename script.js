@@ -15,8 +15,8 @@ function showMessage(response) {
     
     const image = document.getElementsByClassName("image")[0];
     image.src = "img/dead.png";
-    image.style.width = "450px";
-    image.style.height = "300px";
+    image.style.width = "375px";
+    image.style.height = "250px";
 
     document.body.style.backgroundColor = "black";
     document.getElementById("yesButton").style.display = "block";
