@@ -21,18 +21,19 @@ body img {
 }
 
 main {
-  font-family: sdvFont, fantasy;
-  margin-top: 2vh;
+  font-family: sdvFont;
+  margin-top: 1vh;
   text-align: center;
 }
 
 h1 {
   font-size: 4rem;
+  margin: 0.1rem;
 }
 
 h2 {
   font-size: 2rem;
-  margin-top: 1em;
+  margin: 0.1rem;
 }
 
 .buttons {
@@ -56,49 +57,27 @@ h2 {
 .buttons img {
   padding: 0;
   display: block;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
 }
-
-/* .buttons #yesButton {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-.buttons #noButton {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.buttons img {
-  padding: 0;
-  display: block;
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-}
-
-.button {
-  display: grid;
-  place-items: center;
-} */
 
 @media (min-width: 768px) {
   html {
     height: 100%;
   }
 
+  body img {
+    height: 500px;
+  }
+
   main {
-    text-shadow: 1px 1px #153c43;
+    text-shadow: 1px 1px #454545;
   }
 }
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   h2 {
@@ -108,6 +87,6 @@ h2 {
 
 @media (min-width: 1200px) {
   body {
-    background-image: url("../img/splash-xl.jpg");
+    margin: 1rem;
   }
 }

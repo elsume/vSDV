@@ -10,13 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 </head>
 <body>
-    <img src="img/cat_heart.gif" alt="orange stardew cat meowing a heart">
-    <main>
-        <h1>hi pookie :3</h1>
-        <h2>will you be my valentine?</h2>
-    </main>
-    <div class="buttons">
-        <button onclick="showMessage('Yes')" id="yesButton"><img src="img/thumbs_up.gif"></button>
-        <button id="noButton" onclick="showMessage('No')"><img src="img/thumbs_down.gif"></button>
+    <div class="'container">
+        <img class='image' src="img/cat_heart.gif" alt="orange stardew cat meowing a heart">
+        <main>
+            <h1 id="name">hi pookie :3</h1>
+            <h2 id="question">will you be my valentine?</h2>
+        </main>
+        <div class="buttons">
+            <button id="yesButton" onclick="showMessage('Yes')">
+                <img src="img/thumbs_up.gif">
+            </button>
+            <button id="noButton" onclick="showMessage('No')">
+                <img src="img/thumbs_down.gif">
+            </button>
+        </div>
+        <!-- <div class="hidden-message" id="no-message">
+            <p>awh ok girl, gwenchana gwenchana...</p>
+        </div>
+        <div class="hidden-message" id="yes-message">
+            <p>you're gay.</p>
+        </div> -->
     </div>
+    <script src="script.js"></script>
 </body>
