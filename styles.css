@@ -17,7 +17,7 @@ body img {
 
 @font-face {
   font-family: "sdvFont";
-  src: url("fonts/Stardew_Valley.ttf") format("truetype");
+  src: url("font/Stardew_Valley.ttf") format("truetype");
 }
 
 main {
@@ -35,7 +35,32 @@ h2 {
   margin-top: 1em;
 }
 
-.buttons #yesButton {
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Creates two columns */
+  place-items: center; /* Centers items both horizontally and vertically */
+  gap: 20px; /* Adds space between the buttons */
+  justify-content: center; /* Centers the grid horizontally */
+}
+
+/* Styles for the buttons */
+.buttons #yesButton,
+.buttons #noButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Styles for the images */
+.buttons img {
+  padding: 0;
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+/* .buttons #yesButton {
   background: none;
   border: none;
   padding: 0;
@@ -46,15 +71,20 @@ h2 {
   border: none;
   padding: 0;
   cursor: pointer;
-  transform: rotate(180deg) scaleX(-1);
 }
 
 .buttons img {
   padding: 0;
   display: block;
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
 }
+
+.button {
+  display: grid;
+  place-items: center;
+} */
 
 @media (min-width: 768px) {
   html {
