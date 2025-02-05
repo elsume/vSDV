@@ -19,13 +19,8 @@ body img {
   padding-top: 2rem;
 }
 
-@font-face {
-  font-family: "sdvFont";
-  src: url("font/Stardew_Valley.ttf") format("truetype");
-}
-
 main {
-  font-family: sdvFont;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 1vh;
   text-align: center;
 }

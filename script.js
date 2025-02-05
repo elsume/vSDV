@@ -2,16 +2,12 @@
 
 function showMessage(response) {
   if (response === "No") {
-    //hide no button
     document.getElementById("noButton").style.display = "none";
 
-    // Update text content, show message, and change image source to "dance.gif"
     const noName = document.getElementById("name");
     const noMessage = document.getElementById("question");
-    noName.textContent = "but pookie...";
-    noMessage.textContent = "erm...please?";
-    noMessage.style.display = "block";
-    noMessage.style.fontStyle = "normal";
+    noName.textContent = "no way";
+    noMessage.textContent = "just say yes";
     
     const image = document.getElementsByClassName("image")[0];
     image.src = "img/dead.png";
@@ -19,25 +15,21 @@ function showMessage(response) {
     image.style.height = "250px";
 
     document.body.style.backgroundColor = "black";
-    document.getElementById("yesButton").style.display = "block";
   }
   if (response === "Yes") {
-    // Remove name message and no button
+
     document.getElementById("name").remove();
     document.getElementById("noButton").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "you're gay. see you (virtually) on the 14th pookie <3";
-    yesMessage.style.display = "block";
-    yesMessage.style.fontStyle = "normal";
+    yesMessage.textContent = "yay, i like cats too";
+    
     const image = document.getElementsByClassName("image")[0];
     image.src = "img/dance.gif";
     image.style.width = "350px";
     image.style.height = "525px";
     document.body.style.backgroundColor = "#ff7f7f";
 
-  // Remove yes button
     document.getElementById("yesButton").remove();
   }
 }
