@@ -28,7 +28,7 @@ function showMessage(response) {
 
     // Update text content, show message, and change image source to "dance.gif"
     const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "you're gay. see you (virtually) on the 14th pookie <3";
+    yesMessage.textContent = "yipee! happy valentine's day <3";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     const image = document.getElementsByClassName("image")[0];
